@@ -8,7 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="asset/style.css">
-        <link rel="stylesheet" href="asset/color.css">
+        <link rel="stylesheet" href="asset/color.css">        
         <title>Web Dicoding</title>
     </head>
 
@@ -16,9 +16,11 @@
 
         <header>
             <div class="hero-section">
-                <h1>Raih kesempatan untuk belajar coding disini !</h1>
-                <h2>Temukan berbagai beasiswa untuk memajukan dirimu dalam teknologi informasi</h2>
-                <a class="button" href="#content">Baca artikel</a>
+                <div>
+                    <h1>Lembah Cahaya di Galaksi nan Jauh</h1>
+                    <h2>Sekilas info mengenai gambar pertama yang diambil oleh Teleskop James Webb</h2>
+                    <a class="button" href="#content">Baca konten</a>
+                </div>
             </div>
 
             <nav>
@@ -31,81 +33,82 @@
         </header>
 
         <main class="flex gap-normal">
-            <article class="child1 card">
-                <section>
-                    <h1>Will web development & web design be replaced by AIeeeeeee?</h1>
-                    <p>
-                        Our comprehensive guide to CSS flexbox layout.
-                        This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items).
-                        It also includes history, demos, patterns, and a browser support chart.
-                    </p>
-                </section>
+            <div class="child1 card" id="content">
+                <article>
+                    <section>
+                        <h1>Mengenal Teleskop James Webb</h1>
+                        <img src="resource/images/article-pic.jpg" alt="gambar-artikel-1">
+                        <p>
+                            Sebelumnya, Teleskop Webb diberi nama Next Generation Space Telescope (NGST).
+                            Pada September 2002, nama teleskop diganti menurut nama seorang administrator NASA, James Webb.
+                            Teleskop ini direncanakan untuk mengorbit matahari dengan jarak 1,5 juta kilometer dari Bumi.
+                            Teleskop Webb merupakan kolaborasi internasional dari NASA, ESA (European Space Agency), dan Canadian Space Agency (CSA).
+                            Teleskop ini menjadi teleskop terbesar yang pernah diluncurkan ke luar angkasa.
+                        </p>
+                    </section>
+    
+                    <section>
+                        <h1>Foto pertama oleh Teleskop James Webb</h1>
+                        <img src="resource/images/article-pic-2.jpg" alt="gambar-artikel-2">
+                        <p>
+                            Gambar yang nampaknya membentuk sebuah lembah dan gunung nan cantik yang dikelilingi berbagai bintang gemerlap itu 
+                            sebenarnya adalah pucuk dari lokasi yang disebut poin "NGC 3324" di Nebula Carina, yang membentuk sebuah bintang baru.
+                            Tertangkapnya gambar tersebut dengan cahaya infrared oleh Teleskop Luar Angkasa James Webb ini
+                            menunjukkan pertama kalinya proses sebuah bintang baru terbentuk.
+                        </p>                        
+                    </section>
+                </article>
 
-                <section>
-                    <h1>Will web development & web design be replaced by AIeeeeeee?</h1>
-                    <p>
-                        Our comprehensive guide to CSS flexbox layout.
-                        This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items).
-                        It also includes history, demos, patterns, and a browser support chart.
-                    </p>
+                <hr>
 
-                    <h1>What is AI (Artificial Intelligence)?</h1>
-                    <p>
-                        We have probably all seen the movie "I, Robot" where Will Smith fights against robots that have taken over the world. Somewhere we probably all have the fear that someday robots might become so smart that we humans become obsolete and destroyed, but that is far from the reality of what AI is today. With that said, this may be what AI might become in the future, but at least for now, it is not the case.
-
-                        In today's world, we are using artificial intelligence for positive things such as factory production, home assistance, blog writing, and even programming. It removes some of the repetitive work that otherwise would have been done by humans, and it helps us clear tasks in a faster and more efficient way. In 2022 Github Copilot came out, and it is an AI made to help web developers write code faster without having to invent the wheel every time a new function is written. By writing comments about how your function should work Github Copilot automatically looks up similar functions and suggests them to you so that you don't have to write them yourself. 
-                        
-                        Artificial intelligence works in many ways, but when explained specifically it is a computer with software capable of handling tasks that normally require human intelligence. There are 4 main categories of artificial intelligence which are:
-                        
-                        Reactive machines
-                        Limited memory
-                        Theory of mind
-                        Self-awareness
-                    </p>
-                </section>
-            </article>
+                <div class="flex flex-align-center">
+                    <span style='font-size:1.75em; rotate: 30deg;'>&#x1F4CE</span>
+                    <figure>
+                        Artikel dikutip dari sumber : <br>
+                        <a href="https://www.nasa.gov/webbfirstimages">First Images from the James Webb Space Telescope</a>
+                        oleh NASA (National Aeronautics and Space Administration)
+                    </figure>
+                </div>
+            </div>
 
             <aside class="child2" id="author">
                 <div class="sticky card">                    
                     <div class="flex-col">
                         <div>
-                            <img src="resource/images/profile-pic.jpg" alt="Gambarku"> 
-                            <h3>Bagus Nendro Satrio</h3>
+                            <img src="resource/images/profile-pic.jpg" alt="Gambarku"></img> 
+                            <h3>&#x1F58A Bagus Nendro Satrio</h3>
                             <hr>
                         </div>
                         <div>
-                            <h5>JUDUL ARTIKEL</h5>                                        
-                            <p>
-                                
-                            </p>                    
-                            <h5>TANGGAL PUBLIKASI</h5>                                        
-                            <p>12 Agustus 2022</p>                            
-                        </div>        
+                            <h5>&#x1F4F0 JUDUL ARTIKEL</h5>                                        
+                            <p>Lembah Cahaya di Galaksi nan Jauh</p>                    
+                            <h5>&#x1F55B TANGGAL PUBLIKASI</h5>                                        
+                            <p id="published-date">12 Agustus 2022</p>                            
+                        </div>      
                     </div>  
                     <hr>
-                    <h5>PROFILE AUTHOR</h5>                                        
+                    <h5>&#x1F4A0 PROFILE AUTHOR</h5>                                        
                     <p>
                         Hanya seseorang yang suka nonton livestream menggambar dan tutorial coding
                     </p>    
-
                 </div> 
             </aside>
         </main>
     
         <footer id="site-info">
             <div class="flex flex-align-center float-content-center">
-                <!-- <a class="footer-content-left" href="#">Go to top</a> -->
-                <a title ="Go to top" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M54.63 246.6L192 109.3l137.4 137.4C335.6 252.9 343.8 256 352 256s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25l-160-160c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25S42.13 259.1 54.63 246.6zM214.6 233.4c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0L192 301.3l137.4 137.4C335.6 444.9 343.8 448 352 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L214.6 233.4z"/></svg>
+                <a title ="Kembali ke atas" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M54.63 246.6L192 109.3l137.4 137.4C335.6 252.9 343.8 256 352 256s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25l-160-160c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25S42.13 259.1 54.63 246.6zM214.6 233.4c-12.5-12.5-32.75-12.5-45.25 0l-160 160c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0L192 301.3l137.4 137.4C335.6 444.9 343.8 448 352 448s16.38-3.125 22.62-9.375c12.5-12.5 12.5-32.75 0-45.25L214.6 233.4z"/></svg>
                 </a>
             </div>    
-            <hr>            
+            <hr>
             <div class="flex float-content-center flex-align-center">
                 <p>Build with ❤️ in Surabaya, 2022</p>
-                <a href="https://github.com/bagusnendro">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.1.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                <a href="https://github.com/bagusnendro/training-website">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
                 </a>
             </div>
         </footer>
+        <script src="asset/script.js" type="text/javascript"></script>
     </body>
 </html>
